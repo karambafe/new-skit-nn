@@ -20,25 +20,36 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="header__container">
-            <div class="header__logo">
-                <a class="header__logo-logo" href="#"><img src="img/header/header-logo.png" width="70" height="65"></a>
-                <a class="header__logo-title" href="#">
-                    <p class="header__logo-title-text">ПЕРВЫЙ СТРЕЛКОВЫЙ КЛУБ <br> Нижний Новгород</p>
-                </a>
-                <a class="header__logo-shooter" href="#"><img src="img/header/header-shhoter.png" width="115" height="60"></a>
-                <a class="header__logo-fire" href="#"><img src="img/header/header-fire.png" width="86" height="60"></a>
+        <div class="main-container">
+            <div class="main-container__left">
+                <header class="header__container">
+                    <div class="header__logo">
+                        <a class="header__logo-logo" href="#"><img src="img/header/header-logo.png" width="70" height="65"></a>
+                        <a class="header__logo-title" href="#">
+                            <p class="header__logo-title-text">ПЕРВЫЙ СТРЕЛКОВЫЙ КЛУБ <br> Нижний Новгород</p>
+                        </a>
+                        <a class="header__logo-shooter" href="#"><img src="img/header/header-shhoter.png" width="115" height="60"></a>
+                        <a class="header__logo-fire" href="#"><img src="img/header/header-fire.png" width="86" height="60"></a>
+                    </div>
+                    <nav class="header__navbar">
+                        <a class="header__navbar-item header__navbar-item_active" href="#">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        </a>
+                        <a class="header__navbar-item header__navbar-item_active" href="#">Главная</a>
+                        <a class="header__navbar-item" href="#">Информация</a>
+                        <a class="header__navbar-item" href="#">Контакты</a>
+                        <a class="header__navbar-item" href="#">Стоимость</a>
+                    </nav>
+                </header>
             </div>
-            <nav class="header__navbar">
-                <a class="header__navbar-item header__navbar-item_active" href="#">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                </a>
-                <a class="header__navbar-item header__navbar-item_active" href="#">Главная</a>
-                <a class="header__navbar-item" href="#">Информация</a>
-                <a class="header__navbar-item" href="#">Контакты</a>
-                <a class="header__navbar-item" href="#">Стоимость</a>
-            </nav>
-        </header>
+            <div class="main-container__right">
+                <a class="main-container__right-item main-container__right-item_active" href="#">Главная</a>
+                <a class="main-container__right-item" href="#">Информация</a>
+                <a class="main-container__right-item" href="#">Контакты</a>
+                <a class="main-container__right-item" href="#">Стоимость</a>
+            </div>
+
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.2.min.js"><\/script>')</script>
