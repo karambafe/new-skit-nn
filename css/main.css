@@ -103,6 +103,75 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: #222222;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    width: 650px;
+}
+
+.header__logo-title {
+    text-decoration: none;
+}
+
+.header__logo-title-text {
+    width: 357px;
+    font-size: 25px;
+    color: #ea8b3f;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header__navbar {
+    display: flex;
+}
+
+.header__navbar-item {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin: 0 1px;
+    padding:10px 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+/*    font-weight: bold;*/
+    text-decoration: none;
+    color: #ea8b3f;
+}
+
+.header__navbar-item:first-child {
+    display: none;
+}
+
+.header__navbar-item_active {
+    padding-bottom: 0px;
+    border-bottom: 10px solid #ea8b3f;
+}
+
+.header__navbar-item:hover {
+    color: #ffffff;
+    padding-bottom: 0px;
+    border-bottom: 10px solid #ea8b3f;
+}
+
+.fa-bars {
+    color: #ea8b3f;
+    font-size: 30px;
+}
 
 
 
