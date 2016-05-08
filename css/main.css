@@ -298,6 +298,60 @@ textarea {
     color: #25c5cb;
 }
 
+.contacts__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contacts__button_orange {
+    color: #ea8b3f;
+    border-color: #ea8b3f;
+}
+
+.contacts__button_pink {
+    color: #ea5e8c;
+    border-color: #ea5e8c;
+}
+
+.contacts__button_blue {
+    color: #25c5cb;
+    border-color: #25c5cb;
+}
+
+.contacts__button_orange:hover {
+    width: 120px;
+    color: white;
+    background: #ea8b3f;
+    transition: all 0.5s;
+}
+
+.contacts__button_pink:hover {
+    width: 120px;
+    color: white;
+    background: #ea5e8c;
+    transition: all 0.5s;
+}
+
+.contacts__button_blue:hover {
+    width: 120px;
+    color: white;
+    background: #25c5cb;
+    transition: all 0.5s;
+}
+
+
+
+
+
 
 
 
