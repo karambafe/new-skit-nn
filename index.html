@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,300,300italic,700,500,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -38,7 +38,7 @@
                         <a class="header__navbar-item header__navbar-item_active" href="#">Главная</a>
                         <a class="header__navbar-item" href="#">Информация</a>
                         <a class="header__navbar-item" href="#">Контакты</a>
-                        <a class="header__navbar-item" href="#">Стоимость</a>
+                        <a class="header__navbar-item" href="#price">Стоимость</a>
                     </nav>
                 </header>
                 <div class="mainpage">
@@ -55,6 +55,22 @@
                 <a class="main-container__right-item" href="#">Стоимость</a>
             </div>
         </div>
+
+        <section class="information">
+            <div class="information__box">
+                <h3 class="information__button">Информация</h3>
+                <div class="information__wrapper">
+                    <img class="information__wrapper-image" src="img/information/information-plate.png" width="160">
+                    <p class="information__wrapper-text"></p>
+                </div>
+            </div>
+            <div class="information__header">
+                <h1 class="information__name">Первый<br> Стрелковый<br> Клуб</h1>
+                <p class="information__text">Cтендовая стрельба по<br> дисциплине компакт-спортинг</p>
+                <a class="contacts__button contacts__button_orange" href="#price">Стоимость</a>
+
+            </div>
+        </section>
 
         <section class="contacts">
             <div class="contacts__item">
@@ -77,7 +93,7 @@
             </div>
         </section>
 
-        <section class="price">
+        <section class="price" id="price">
             <h1 class="price__name">Стоимость услуг</h1>
             <div class="price__container">
                 <div class="price__item">
