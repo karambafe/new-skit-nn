@@ -435,6 +435,11 @@ textarea {
     text-align: right;
 }
 
+.information__container {
+    align-items: center;
+    padding-top: 40px;
+}
+
 .information__box {
     width: 450px;
     margin-bottom: 10px;
@@ -559,6 +564,59 @@ textarea {
         padding-right: 30px;
     }
 
+}
+
+@media all and (max-width:890px) {
+    .information__container {
+        order: 1;
+    }
+
+    .information__header {
+        order: 0;
+        margin-bottom: 30px;
+    }
+    .information__container {
+        padding-top: 0;
+    }
+
+}
+
+@media all and (max-width:550px) {
+    .header__logo-title-text {
+        width: 250px;
+        font-size: 16px;
+}
+
+@media all and (max-width:470px) {
+    .header__logo-logo {
+        display: none;
+    }
+
+    .header__navbar-item:first-child {
+        display: flex;
+        font-size: 25px;
+        border: 0;
+        padding-right: 30px;
+    }
+
+    .information__box {
+        width: 300px;
+    }
+
+    .information__header {
+        align-items: center;
+    }
+
+    .information__name {
+        font-size: 45px;
+        line-height: 54px;
+        text-align: center;
+    }
+    .information__text {
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+    }
 }
 
 

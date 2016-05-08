@@ -8,9 +8,8 @@ function removeClass(o, c){
     var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g")
     o.className = o.className.replace(re, "$1").replace(/\s+/g, " ").replace(/(^ | $)/g, "")
 }
+
 var clickFlag = 0;
-
-
 
 var navButton = document.getElementById('js-nav-button');
 navButton.onclick = function() {
@@ -18,11 +17,33 @@ navButton.onclick = function() {
     if (clickFlag%2 != 0) {
         addClass(document.getElementById('cont-left'),'left_flip-left');
         addClass(document.getElementById('cont-right'),'left-flip-right');
+        var timerId = setInterval(function() {
+            var widthOfWindow = document.documentElement.clientWidth;
+            console.log(widthOfWindow);
+            if (widthOfWindow > 920) {
+                removeClass(document.getElementById('cont-left'),'left_flip-left');
+                removeClass(document.getElementById('cont-right'),'left-flip-right');
+                clickFlag = 0;
+                clearInterval(timerId);
+            }
+        },500);
+
     } else {
         removeClass(document.getElementById('cont-left'),'left_flip-left');
         removeClass(document.getElementById('cont-right'),'left-flip-right');
     }
 }
+
+// начать повторы с интервалом 2 сек
+//var timerId = setInterval(function() {
+//  alert( "тик" );
+//}, 2000);
+//
+//// через 5 сек остановить повторы
+//setTimeout(function() {
+//  clearInterval(timerId);
+//  alert( 'стоп' );
+//}, 5000);
 
 
 var informationBoxFirst = document.getElementById('js-information-1');
@@ -39,7 +60,6 @@ informationBoxFirst.onclick = function() {
     flagInformationBoxSecond = 0;
     flagInformationBoxThird = 0;
     if (flagInformationBoxFirst%2 != 0) {
-        console.log(numberBox);
         for (var i=0; i < numberBox.length; i++){
             removeClass(numberBox[i],'information__wrapper_visible');
         }
@@ -79,14 +99,6 @@ informationBoxThird.onclick = function() {
     }
 }
 
-//informationBoxFirst.onclick = function() {
-//    var numberBox = document.getElementsByClassName('information__wrapper');
-//    console.log(numberBox);
-//    for (var i=0; i<numberBox.length; i++){
-//        removeClass(numberBox[i],'information__wrapper_visible');
-//    }
-//    addClass(numberBox[0],'information__wrapper_visible');
-//}
 
 
 
