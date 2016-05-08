@@ -458,13 +458,14 @@ textarea {
 }
 
 .information__wrapper {
-    display: inline-block;
+    display: none;
     float: left;
     width: 100%;
 }
 
 .information__wrapper_visible {
     display: inline-block;
+    transition: all 0.5s;
 }
 
 .information__wrapper-image {
