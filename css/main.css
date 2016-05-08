@@ -258,6 +258,63 @@ textarea {
     background-color: transparent;
 }
 
+.contacts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #222222;
+    padding: 40px;
+}
+
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+}
+
+.contacts__name {
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+}
+
+.contacts__text {
+    font-size: 20px;
+    color: #777777;
+    text-align: center;
+}
+
+.contacts__name_orange {
+    color: #ea8b3f;
+}
+
+.contacts__name_pink {
+    color: #ea5e8c;
+}
+
+.contacts__name_blue {
+    color: #25c5cb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer {
     display: flex;
     flex-direction: column;
