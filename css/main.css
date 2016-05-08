@@ -377,7 +377,7 @@ textarea {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid #777777;
+/*    border: 1px solid #777777;*/
     padding-top: 10px;
     border-radius: 5px;
     margin: 0 20px;
