@@ -261,9 +261,12 @@ textarea {
 .contacts {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background: #222222;
-    padding: 40px;
+    padding: 0 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
 }
 
 .contacts__item {
@@ -272,6 +275,7 @@ textarea {
     justify-content: flex-start;
     align-items: center;
     width: 250px;
+    margin-top: 40px;
 }
 
 .contacts__name {
