@@ -437,7 +437,7 @@ textarea {
 
 .information__box {
     width: 450px;
-/*    display: inline;*/
+    margin-bottom: 10px;
 }
 
 .information__button {
@@ -449,7 +449,7 @@ textarea {
     line-height: 36px;
     font-weight: 100;
     padding: 5px;
-    border: 1px solid #b3b3b3;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     width: 100%;
     min-width: 270px;
@@ -458,18 +458,16 @@ textarea {
 }
 
 .information__wrapper {
-/*    display: flex;*/
-/*    align-items: flex-start;*/
-/*    flex-wrap: wrap;*/
-/*    float: left;*/
     display: inline-block;
     float: left;
-    height: 400px;
     width: 100%;
 }
 
+.information__wrapper_visible {
+    display: inline-block;
+}
+
 .information__wrapper-image {
-/*    display: inline-block;*/
     float: left;
     padding-right: 10px;
 }
