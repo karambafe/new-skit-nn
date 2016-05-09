@@ -232,7 +232,6 @@ textarea {
     width: 100%;
     height: 100vh;
     margin-top: -100px;
-/*    background: grey;*/
     padding-top: 100px;
 }
 
@@ -245,7 +244,6 @@ textarea {
     min-height: 350px;
     background-position: 50%;
     background-size: cover;
-/*    background: grey url('../img/mainpage/main-video-fon1.png');*/
     z-index: 10;
 }
 
@@ -449,28 +447,30 @@ textarea {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    color: #b3b3b3;
+    color: #b3b3b3;;
     font-size: 30px;
     line-height: 36px;
     font-weight: 100;
     padding: 5px;
-    border: 1px solid #dddddd;
+    border: 1px solid #b3b3b3;
     border-radius: 5px;
     width: 100%;
     min-width: 270px;
     cursor: pointer;
     margin: 0;
+
 }
 
 .information__wrapper {
     display: none;
     float: left;
     width: 100%;
+    transition: all 1s;
 }
 
 .information__wrapper_visible {
     display: inline-block;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .information__wrapper-image {
@@ -504,7 +504,6 @@ textarea {
 .director__container {
     display: flex;
     justify-content: space-around;
-/*    align-items: center;*/
     width: 100%;
     flex-wrap: wrap;
 }
@@ -523,12 +522,6 @@ textarea {
 }
 
 .director__information {
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    height: 50px;*/
-/*    width: 300px;*/
-/*    align-items: center;*/
     align-self: center;
 }
 
@@ -580,9 +573,6 @@ textarea {
     margin-right: 5px;
 }
 
-
-
-
 .director__information-text {
     display: flex;
     font-size: 17px;
@@ -591,20 +581,46 @@ textarea {
     color: #777777;
 }
 
+.map {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #222222;
+    padding: 40px;
+    box-sizing: border-box;
+}
 
+.map__name {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 46px;
+    color: #777777;
+}
 
+.map__map {
+    width: 80vw;
+    height: 700px;
+    cursor: url("https://api-maps.yandex.ru/2.1.38/./build/release//images/util_cursor_stor…aps.yandex.ru/2.1.38/./build/release//images/util_cursor_storage_grab.cur"), move;
+    margin-bottom: 20px;
+}
 
+.map__description {
+    width: 80vw;
+    font-size: 18px;
+    color: #777777;
+}
 
+.map__description_orange {
+    color: #ea8b3f;
+    font-weight: bold;
+    font-size: 20px;
+}
 
-
-
-
-
-
-
-
-
-
+.map__description_pink {
+    color: #ea5e8c;
+}
 
 .footer {
     display: flex;
@@ -722,21 +738,6 @@ textarea {
         height: 200px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
