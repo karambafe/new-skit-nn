@@ -491,6 +491,104 @@ textarea {
     font-weight: bold;
 }
 
+.director {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background: #222222;
+}
+
+.director__container {
+    display: flex;
+    justify-content: space-around;
+/*    align-items: center;*/
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.director__image {
+    border-radius: 20px;
+}
+
+.director__name {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 46px;
+    color: #777777;
+
+}
+
+.director__information {
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 50px;*/
+/*    width: 300px;*/
+/*    align-items: center;*/
+    align-self: center;
+}
+
+.director__information-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+/*    width: 700px;*/
+    height: 46px;
+}
+
+.director__information-image-1 {
+    width: 47px;
+    height: 47px;
+    background: url('../img/director/director-sprite-optimize.png') no-repeat;
+    background-position: -604px -5px;
+    margin-right: 5px;
+}
+
+.director__information-image-2 {
+    width: 47px;
+    height: 47px;
+    background: url('../img/director/director-sprite-optimize.png') no-repeat;
+    background-position: -10px -132px;
+    margin-right: 5px;
+}
+
+.director__information-image-3 {
+    width: 47px;
+    height: 47px;
+    background: url('../img/director/director-sprite-optimize.png') no-repeat;
+    background-position: -75px -132px;
+    margin-right: 5px;
+}
+
+.director__information-image-4 {
+    width: 47px;
+    height: 47px;
+    background: url('../img/director/director-sprite-optimize.png') no-repeat;
+    background-position: -273px -132px;
+    margin-right: 5px;
+}
+
+.director__information-image-5 {
+    width: 47px;
+    height: 47px;
+    background: url('../img/director/director-sprite-optimize.png') no-repeat;
+    background-position: -206px -321px;
+    margin-right: 5px;
+}
+
+
+
+
+.director__information-text {
+    display: flex;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 200;
+    color: #777777;
+}
 
 
 
