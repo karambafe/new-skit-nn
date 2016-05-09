@@ -159,8 +159,17 @@ textarea {
 
 
 .header__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100px;
     padding: 0 10px;
@@ -361,6 +370,13 @@ textarea {
     background: #222222;
 }
 
+.price__name {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 46px;
+    color: #777777;
+}
+
 .price__container {
     display: flex;
     flex-wrap: wrap;
@@ -371,11 +387,22 @@ textarea {
 .price__item {
     box-sizing: border-box;
     width: 290px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
-/*    border: 1px solid #777777;*/
     padding-top: 10px;
     border-radius: 5px;
     margin: 0 20px;
@@ -401,8 +428,15 @@ textarea {
 }
 
 .information {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
     background: #222222;
@@ -411,9 +445,22 @@ textarea {
 }
 
 .information__header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
     align-items: flex-end;
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    -ms-flex-order: 5;
     order: 5;
 }
 
@@ -434,6 +481,10 @@ textarea {
 }
 
 .information__container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
     align-items: center;
     padding-top: 40px;
 }
@@ -445,7 +496,13 @@ textarea {
 
 .information__button {
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #b3b3b3;;
     font-size: 30px;
@@ -465,11 +522,13 @@ textarea {
     display: none;
     float: left;
     width: 100%;
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
 .information__wrapper_visible {
     display: inline-block;
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
@@ -494,17 +553,34 @@ textarea {
 .director {
     width: 100%;
     padding: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     box-sizing: border-box;
     background: #222222;
 }
 
 .director__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 100%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -522,14 +598,24 @@ textarea {
 }
 
 .director__information {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
     align-self: center;
 }
 
 .director__information-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
-/*    width: 700px;*/
     height: 46px;
 }
 
@@ -574,6 +660,9 @@ textarea {
 }
 
 .director__information-text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     font-size: 17px;
     line-height: 20px;
@@ -583,9 +672,21 @@ textarea {
 
 .map {
     width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     background: #222222;
     padding: 40px;
@@ -629,9 +730,22 @@ textarea {
 }
 
 .footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
     padding-top: 20px;
@@ -640,7 +754,7 @@ textarea {
 
 .footer__text {
     text-align: 16px;
-    color: white;
+    color: azure;
     font-weight: 500;
 }
 
@@ -679,6 +793,9 @@ textarea {
         display: none;
     }
     .header__navbar-item:first-child {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         font-size: 35px;
         border: 0;
@@ -717,6 +834,9 @@ textarea {
     }
 
     .header__navbar-item:first-child {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         font-size: 25px;
         border: 0;
