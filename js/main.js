@@ -106,9 +106,15 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
-	$('#up').click(function() {
+	$("#cont-right").on("click","a", function (event) {
         event.preventDefault();
-        $('body,html').animate({scrollTop:0},500);
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+	$('#footer-arrow-up').click(function() {
+        event.preventDefault();
+        $('body,html').animate({scrollTop:0},1100);
     	return false;
     });
 });

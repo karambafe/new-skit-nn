@@ -127,12 +127,14 @@ textarea {
 
 
 .main-container__right {
+	position: relative;
     box-sizing: border-box;
     display: none;
     width: 270px;
     background: #777777;
     height: 100vh;
     padding-top: 100px;
+	z-index: 1000;
 }
 
 .main-container__right-item {
