@@ -245,6 +245,7 @@ textarea {
 }
 
 .mainpage__slide {
+	display: block;
     position: relative;
     box-sizing: border-box;
     width: 100%;
@@ -259,13 +260,12 @@ textarea {
 	position: absolute;
 	top: 0;
 	left: 0;
-	min-width: 100%;
-    min-height: 100%;
-    width: auto;
-	height: auto;
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
 /*	max-height: 101%;*/
 	z-index: 1;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 .mainpage__slide_lock {
