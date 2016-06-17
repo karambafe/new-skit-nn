@@ -261,8 +261,11 @@ textarea {
 	left: 0;
 	min-width: 100%;
     min-height: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    width: auto;
+	height: auto;
+/*	max-height: 101%;*/
+	z-index: 1;
+	object-fit: contain;
 }
 
 .mainpage__slide_lock {
@@ -437,6 +440,7 @@ textarea {
 }
 
 .information {
+	position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -451,6 +455,7 @@ textarea {
     background: #222222;
     padding: 20px 0;
     box-sizing: border-box;
+	z-index: 10000;
 }
 
 .information__header {
@@ -766,6 +771,17 @@ textarea {
     color: azure;
     font-weight: 500;
 }
+
+/*
+@media all and (max-width: 1300px) {
+	.mainpage__slide-item {
+		width: 100%;
+		min-width: 90vw;
+		overflow: hidden;
+
+	}
+}
+*/
 
 
 @media all and (max-width: 1100px) {
