@@ -106,6 +106,11 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
+	$('#up').click(function() {
+        event.preventDefault();
+        $('body,html').animate({scrollTop:0},500);
+    	return false;
+    });
 });
 
 

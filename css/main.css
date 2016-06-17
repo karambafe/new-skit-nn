@@ -778,6 +778,17 @@ textarea {
     font-weight: 500;
 }
 
+.footer__up {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 36px;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+}
+
 /*
 @media all and (max-width: 1300px) {
 	.mainpage__slide-item {
