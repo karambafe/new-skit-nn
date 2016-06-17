@@ -126,6 +126,18 @@ var sliderButtonPreviuos= document.getElementsByClassName('js-previous');
 var sliderButtonNext= document.getElementsByClassName('js-next');
 var sliderItem = document.getElementsByClassName('js-slider-count');
 
+//var widthOfWindowForSlider = document.documentElement.clientWidth;
+//console.log(widthOfWindowForSlider);
+//if (widthOfWindowForSlider < 650) {
+//	document.getElementsByClassName('mainpage__slide-item')[0].classList.remove('mainpage__slide-item_active');
+//	document.getElementsByClassName('mainpage__slide-item')[0].classList.remove('js-slider-count');
+//	document.getElementsByClassName('mainpage__slide-item')[1].classList.add('mainpage__slide-item_video');
+//	document.getElementsByClassName('mainpage__slide-item')[0].classList.remove('mainpage__slide-item');
+//	document.getElementsByClassName('mainpage__slide-item')[1].classList.add('mainpage__slide-item_active');
+//}
+
+
+
 var sliderFlag = 0;
 var sliderCount = document.getElementsByClassName('js-slider-count').length;
 
