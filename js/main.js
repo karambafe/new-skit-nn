@@ -99,19 +99,22 @@ informationBoxThird.onclick = function() {
     }
 }
 
+function anchor(skitAnchor,timeAnchor) {
+	$(skitAnchor).on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, timeAnchor);
+    });
+}
+
 $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1000);
-    });
-	$("#cont-right").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1000);
-    });
+	anchor('#menu',1000);
+	anchor('#cont-right',1000);
+	anchor('#price-information',1000);
+	anchor('#js-director-1',600);
+	anchor('#js-director-2',800);
+	anchor('#js-map',1300);
 	$('#footer-arrow-up').click(function() {
         event.preventDefault();
         $('body,html').animate({scrollTop:0},1100);
