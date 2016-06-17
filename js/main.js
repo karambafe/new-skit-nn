@@ -122,7 +122,34 @@ $(document).ready(function(){
     });
 });
 
+var sliderButtonPreviuos= document.getElementsByClassName('js-previous');
+var sliderButtonNext= document.getElementsByClassName('js-next');
+var sliderItem = document.getElementsByClassName('js-slider-count');
 
+var sliderFlag = 0;
+var sliderCount = document.getElementsByClassName('js-slider-count').length;
 
+sliderButtonNext[0].addEventListener('click', function() {
+	if (sliderFlag == sliderCount-1) {
+		document.getElementsByClassName('mainpage__slide-item')[sliderCount-1].classList.remove('mainpage__slide-item_active');
+		sliderFlag = 0;
+		document.getElementsByClassName('mainpage__slide-item')[sliderFlag].classList.add('mainpage__slide-item_active');
+	} else {
+		document.getElementsByClassName('mainpage__slide-item')[sliderFlag].classList.remove('mainpage__slide-item_active');
+		document.getElementsByClassName('mainpage__slide-item')[sliderFlag+1].classList.add('mainpage__slide-item_active');
+		sliderFlag = sliderFlag + 1;
+	}
+})
 
+sliderButtonPreviuos[0].addEventListener('click', function() {
+	if (sliderFlag == 0) {
+		document.getElementsByClassName('mainpage__slide-item')[sliderFlag].classList.remove('mainpage__slide-item_active');
+		sliderFlag = sliderCount-1;
+		document.getElementsByClassName('mainpage__slide-item')[sliderCount-1].classList.add('mainpage__slide-item_active');
 
+	} else {
+		document.getElementsByClassName('mainpage__slide-item')[sliderFlag].classList.remove('mainpage__slide-item_active');
+		document.getElementsByClassName('mainpage__slide-item')[sliderFlag-1].classList.add('mainpage__slide-item_active');
+		sliderFlag = sliderFlag-1;
+	}
+})

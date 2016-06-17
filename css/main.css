@@ -269,12 +269,12 @@ textarea {
 	z-index: 1;
 	object-fit: cover;
 	opacity: 0;
-	transition: all 1s;
+	transition: opacity 2s;
 }
 
 .mainpage__slide-item_active {
 	opacity: 1;
-	transition: all 1s;
+	transition: opacity 2s;
 }
 
 .mainpage__slide-item-2 {
