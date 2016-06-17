@@ -277,6 +277,12 @@ textarea {
     background-color: transparent;
 }
 
+.mainpage__slide-item_mobile {
+	background: url('../img/mainpage/Main_Mobile.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	display: none;
+}
+
 .contacts {
     width: 100%;
     display: flex;
@@ -829,6 +835,8 @@ textarea {
 
 }
 
+
+
 @media all and (max-width:890px) {
     .information__container {
         order: 1;
@@ -842,6 +850,16 @@ textarea {
         padding-top: 0;
     }
 
+}
+
+@media all and (max-width: 768px) {
+	.mainpage__slide-item_video {
+		display: none;
+	}
+
+	.mainpage__slide-item_mobile {
+		display: block;
+	}
 }
 
 @media all and (max-width:550px) {
