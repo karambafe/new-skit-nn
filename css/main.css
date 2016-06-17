@@ -781,6 +781,8 @@ textarea {
 }
 
 .footer__up {
+	box-sizing: border-box;
+	padding: 2px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -788,7 +790,7 @@ textarea {
 	font-size: 36px;
 	line-height: 40px;
 	width: 45px;
-	height: 45px;
+	height: 48px;
 	margin-bottom: 10px;
 }
 
