@@ -618,14 +618,14 @@ textarea {
     display: none;
     float: left;
     width: 100%;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: display 2s;
+    transition: display 2s;
 }
 
 .information__wrapper_visible {
     display: inline-block;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+     -webkit-transition: display 2s;
+    transition: display 2s;
 }
 
 .information__wrapper-image {
