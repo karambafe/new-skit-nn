@@ -8,38 +8,50 @@
         <meta name="description" content="Gamma Gallery - A Responsive Image Gallery Experiment"/>
         <meta name="keywords" content="html5, responsive, image gallery, masonry, picture, images, sizes, fluid, history api, visibility api"/>
         <meta name="author" content="Codrops"/>
-        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="stylesheet" href="css/normalize-min.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,300,300italic,700,500,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<script src="js/modernizr.custom.70736.js"></script>
 		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
 		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
     </head>
     <body>
         <div class="container">
+        	<div class="main-container-gallery">
 
-			<!-- Codrops top bar -->
-            <div class="codrops-top clearfix">
-                <a href="http://tympanus.net/Tutorials/HeadingSets/">
-                    <strong>&laquo; Previous Demo: </strong>Heading Set Styling
-                </a>
-                <span class="right">
-                	<a href="http://www.idleformat.com/">Images by Idleformat</a>
-                    <a href="http://tympanus.net/codrops/?p=11836">
-                        <strong>Back to the Codrops Article</strong>
-                    </a>
-                </span>
-            </div><!--/ Codrops top bar -->
+            <div class="main-container__left">
+                <header class="header__container">
+                    <div class="header__logo">
+                        <a class="header__logo-logo" href=""><img src="img/header/header-logo.png" width="70" height="65"></a>
+                        <a class="header__logo-title" href="">
+                            <p class="header__logo-title-text">ПЕРВЫЙ СТРЕЛКОВЫЙ КЛУБ <br> Нижний Новгород</p>
+                        </a>
+                        <a class="header__logo-shooter" href="#"><img src="img/header/header-shhoter.png" width="115" height="60"></a>
+                        <a class="header__logo-fire" href="#"><img src="img/header/header-fire.png" width="86" height="60"></a>
+                    </div>
+                    <nav class="header__navbar" id='menu'>
+                        <a class="header__navbar-item header__navbar-item_active" href="#">
+                        <i id="js-nav-button" class="fa fa-bars js-flip" aria-hidden="true"></i>
+                        </a>
+                        <a class="header__navbar-item header__navbar-item_active" href="/">Главная</a>
+                        <a class="header__navbar-item" href="index.html#information">Информация</a>
+                        <a class="header__navbar-item" href="index.html#contacts">Контакты</a>
+                        <a class="header__navbar-item" href="index.html#price">Стоимость</a>
+                    </nav>
+                </header>
 
-			<div class="main">
-				<header class="clearfix">
+                <div class="main">
+				<div class="clearfix">
 
-					<h1>Gamma Gallery<span>A responsive image gallery experiment</span></h1>
+					<h2>Галерея</h2>
 
 					<div class="support-note">
 						<span class="note-ie">Sorry, only modern browsers.</span>
 					</div>
 
-				</header>
+				</div>
 
 				<div class="gamma-container gamma-loading" id="gamma-container">
 
@@ -334,6 +346,22 @@
 				</div>
 
 			</div><!--/main-->
+
+            </div>
+            <div id="cont-right" class="main-container__right">
+                <a class="main-container__right-item main-container__right-item_active" href="#">Главная</a>
+                <a class="main-container__right-item" href="#information">Информация</a>
+                <a class="main-container__right-item" href="#contacts">Контакты</a>
+                <a class="main-container__right-item" href="#price">Стоимость</a>
+            </div>
+        </div>
+
+<!--/main-->
+			<footer class="footer">
+          	<i id='footer-arrow-up' class="fa fa-arrow-circle-up fa-3x footer__up js-footer-up" aria-hidden="true"></i>
+            <img class="footer__logo" src="img/footer/Logo-footer.png" width="147" height="152" alt="logo">
+            <p class="footer__text">Copyright &copy; 2016 kfe_style</p>
+        </footer>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script src="js/jquery.masonry.min.js"></script>
