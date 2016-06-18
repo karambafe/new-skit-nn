@@ -15,14 +15,18 @@ var navButton = document.getElementById('js-nav-button');
 navButton.onclick = function() {
     clickFlag = clickFlag + 1;
     if (clickFlag%2 != 0) {
-        addClass(document.getElementById('cont-left'),'left_flip-left');
-        addClass(document.getElementById('cont-right'),'left-flip-right');
+//        addClass(document.getElementById('cont-left'),'left_flip-left');
+//        addClass(document.getElementById('cont-right'),'left-flip-right');
+		document.getElementById('cont-left').classList.add('left_flip-left');
+		document.getElementById('cont-right').classList.add('left-flip-right');
         var timerId = setInterval(function() {
             var widthOfWindow = document.documentElement.clientWidth;
             console.log(widthOfWindow);
             if (widthOfWindow > 920) {
-                removeClass(document.getElementById('cont-left'),'left_flip-left');
-                removeClass(document.getElementById('cont-right'),'left-flip-right');
+//                removeClass(document.getElementById('cont-left'),'left_flip-left');
+//                removeClass(document.getElementById('cont-right'),'left-flip-right');
+				document.getElementById('cont-left').classList.remove('left_flip-left');
+				document.getElementById('cont-right').classList.remove('left-flip-right');
                 clickFlag = 0;
                 clearInterval(timerId);
             }
@@ -63,9 +67,11 @@ informationBoxFirst.onclick = function() {
         for (var i=0; i < numberBox.length; i++){
             removeClass(numberBox[i],'information__wrapper_visible');
         }
-        addClass(numberBox[0],'information__wrapper_visible');
+//        addClass(numberBox[0],'information__wrapper_visible');
+		numberBox[0].classList.add('information__wrapper_visible');
     } else {
-        removeClass(numberBox[0],'information__wrapper_visible');
+//        removeClass(numberBox[0],'information__wrapper_visible');
+		numberBox[0].classList.remove('information__wrapper_visible');
     }
 }
 
@@ -78,9 +84,11 @@ informationBoxSecond.onclick = function() {
         for (var i=0; i < numberBox.length; i++){
             removeClass(numberBox[i],'information__wrapper_visible');
         }
-        addClass(numberBox[1],'information__wrapper_visible');
+//        addClass(numberBox[1],'information__wrapper_visible');
+		numberBox[1].classList.add('information__wrapper_visible');
     } else {
-        removeClass(numberBox[1],'information__wrapper_visible');
+//        removeClass(numberBox[1],'information__wrapper_visible');
+		numberBox[1].classList.remove('information__wrapper_visible');
     }
 }
 
@@ -93,9 +101,11 @@ informationBoxThird.onclick = function() {
         for (var i=0; i < numberBox.length; i++){
             removeClass(numberBox[i],'information__wrapper_visible');
         }
-        addClass(numberBox[2],'information__wrapper_visible');
+//        addClass(numberBox[2],'information__wrapper_visible');
+		numberBox[2].classList.add('information__wrapper_visible');
     } else {
-        removeClass(numberBox[2],'information__wrapper_visible');
+//        removeClass(numberBox[2],'information__wrapper_visible');
+		numberBox[2].classList.remove('information__wrapper_visible');
     }
 }
 

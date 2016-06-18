@@ -111,6 +111,11 @@ textarea {
 /*    background: grey;*/
 }
 
+.main-container-gallery {
+	display: flex;
+	width: 100%;
+}
+
 .main-container__left {
     width: 100%;
 /*    margin-left: -270px;*/
@@ -136,6 +141,10 @@ textarea {
     height: 100vh;
     padding-top: 100px;
 	z-index: 1000;
+}
+
+.main-container__right-gallery {
+	height: auto;
 }
 
 .main-container__right-item {
