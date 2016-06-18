@@ -25,7 +25,7 @@ html { height: 100%; }
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     background: #fff;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 15px;
     color: #333;
     -webkit-font-smoothing: antialiased;
@@ -47,6 +47,9 @@ a {
 	padding: 30px 20px 100px 20px;
 	max-width: 1580px;
 	margin: 0 auto;
+	background: #222222;
+	box-sizing: border-box;
+	border-top: 1px solid #3f3f3f;
 }
 
 .main > header {
@@ -69,12 +72,12 @@ a {
 }
 
 .main h2 {
-	font-size: 38px;
-	font-weight: 300;
-	text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+	font-size: 32px;
+	font-weight: 100;
+	color: #b3b3b3;
 	padding: 10px 0 0 0;
 	margin-bottom: 20px;
-	border-top: 1px solid #f7f7f7;
+/*	border-top: 1px solid #f7f7f7;*/
 }
 
 /* Header Style */
