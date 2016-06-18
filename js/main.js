@@ -126,22 +126,72 @@ var sliderButtonPreviuos= document.getElementsByClassName('js-previous');
 var sliderButtonNext= document.getElementsByClassName('js-next');
 var sliderItem = document.getElementsByClassName('js-slider-count');
 
-//var widthOfWindowForSlider = document.documentElement.clientWidth;
-//console.log(widthOfWindowForSlider);
-//if (widthOfWindowForSlider < 650) {
-//	document.getElementsByClassName('mainpage__slide-item')[0].classList.remove('mainpage__slide-item_active');
-//	document.getElementsByClassName('mainpage__slide-item')[0].classList.remove('js-slider-count');
-//	document.getElementsByClassName('mainpage__slide-item')[1].classList.add('mainpage__slide-item_video');
-//	document.getElementsByClassName('mainpage__slide-item')[0].classList.remove('mainpage__slide-item');
-//	document.getElementsByClassName('mainpage__slide-item')[1].classList.add('mainpage__slide-item_active');
-//}
-
-
+var widthOfWindowForSlider = document.documentElement.clientWidth;
 
 var sliderFlag = 0;
 var sliderCount = document.getElementsByClassName('js-slider-count').length;
 
+//if (widthOfWindowForSlider < 768) {
+//	console.log(widthOfWindowForSlider);
+//	sliderFlag = 1;
+//	document.getElementsByClassName('mainpage__slide-item')[0].setAttribute('display','none');
+//	document.getElementsByClassName('mainpage__slide-item')[0].classList.remove('mainpage__slide-item_active');
+//	document.getElementsByClassName('mainpage__slide-item')[1].classList.add('mainpage__slide-item_active');
+//	sliderButtonNext[0].addEventListener('click', function() {
+//	if (sliderFlag == sliderCount-1) {
+//		//проблема где-то здесь
+//		console.log(sliderFlag);
+//		console.log(sliderCount);
+//		document.getElementsByClassName('mainpage__slide-item')[sliderCount-1].classList.remove('mainpage__slide-item_active');
+//		document.getElementsByClassName('mainpage__slide-item')[0].classList.remove('mainpage__slide-item_active');
+//		sliderFlag = 1;
+//		document.getElementsByClassName('mainpage__slide-item')[sliderFlag].classList.add('mainpage__slide-item_active');
+//	} else {
+//		document.getElementsByClassName('mainpage__slide-item')[sliderFlag].classList.remove('mainpage__slide-item_active');
+//		document.getElementsByClassName('mainpage__slide-item')[sliderFlag+1].classList.add('mainpage__slide-item_active');
+//		sliderFlag = sliderFlag + 1;
+//	}
+//
+//})
+
+
+//	sliderButtonPreviuos[0].addEventListener('click', function() {
+//	if (sliderFlag == 1) {
+//		document.getElementsByClassName('mainpage__slide-item')[sliderFlag].classList.remove('mainpage__slide-item_active');
+//		sliderFlag = sliderCount-1;
+//		document.getElementsByClassName('mainpage__slide-item')[sliderCount-1].classList.add('mainpage__slide-item_active');
+//
+//	} else {
+//		document.getElementsByClassName('mainpage__slide-item')[sliderFlag].classList.remove('mainpage__slide-item_active');
+//		document.getElementsByClassName('mainpage__slide-item')[sliderFlag-1].classList.add('mainpage__slide-item_active');
+//		sliderFlag = sliderFlag-1;
+//	}
+//
+//})
+//
+//}
+
+if (widthOfWindowForSlider < 768) {
+	document.getElementsByClassName('mainpage__slide-item')[0].classList.add('mainpage__slide-item_active_none');
+	document.getElementsByClassName('mainpage__slide-item')[1].classList.add('mainpage__slide-item_active');
+	sliderFlag = 1;
+	sliderButtonPreviuos[0].addEventListener('click', function() {
+	if (sliderFlag == 1) {
+		document.getElementsByClassName('mainpage__slide-item')[sliderFlag].classList.remove('mainpage__slide-item_active');
+		sliderFlag = sliderCount-1;
+		document.getElementsByClassName('mainpage__slide-item')[sliderCount-1].classList.add('mainpage__slide-item_active');
+
+	} else {
+		document.getElementsByClassName('mainpage__slide-item')[sliderFlag].classList.remove('mainpage__slide-item_active');
+		document.getElementsByClassName('mainpage__slide-item')[sliderFlag-1].classList.add('mainpage__slide-item_active');
+		sliderFlag = sliderFlag-1;
+	}
+})
+} else {
+
 sliderButtonNext[0].addEventListener('click', function() {
+	console.log(sliderFlag);
+	console.log(sliderCount);
 	if (sliderFlag == sliderCount-1) {
 		document.getElementsByClassName('mainpage__slide-item')[sliderCount-1].classList.remove('mainpage__slide-item_active');
 		sliderFlag = 0;
@@ -165,3 +215,5 @@ sliderButtonPreviuos[0].addEventListener('click', function() {
 		sliderFlag = sliderFlag-1;
 	}
 })
+
+}

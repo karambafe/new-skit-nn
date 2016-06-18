@@ -277,6 +277,10 @@ textarea {
 	transition: opacity 2s;
 }
 
+.mainpage__slide-item_active_none {
+	display: none;
+}
+
 /*
 .mainpage__slide-item_video {
 	display: block;
