@@ -300,9 +300,8 @@ textarea {
 }
 
 .mainpage__slide-item-2 {
-	background: url(../img/mainpage/Main_Slide_Show2.jpeg) no-repeat 50% 50%;
+	background: url(../img/mainpage/Main_Slide_Show2.jpg) no-repeat 50% 50%;
 	background-size: cover;
-/*	opacity: 1;*/
 }
 
 .mainpage__slide-item-3 {
@@ -313,7 +312,16 @@ textarea {
 .mainpage__slide-item-4 {
 	background: url(../img/mainpage/Main_Slide_Show4.jpg) no-repeat 50% 50%;
 	background-size: cover;
-/*	opacity: 1;*/
+}
+
+.mainpage__slide-item-5 {
+	background: url(../img/mainpage/Main_Slide_Show5.jpeg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.mainpage__slide-item-6 {
+	background: url(../img/mainpage/Main_Slide_Show6.jpg) no-repeat 50% 50%;
+	background-size: cover;
 }
 
 .mainpage__buttons {
