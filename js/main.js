@@ -1,30 +1,15 @@
-function addClass(o, c){
-    var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g")
-    if (re.test(o.className)) return
-    o.className = (o.className + " " + c).replace(/\s+/g, " ").replace(/(^ | $)/g, "")
-}
-
-function removeClass(o, c){
-    var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g")
-    o.className = o.className.replace(re, "$1").replace(/\s+/g, " ").replace(/(^ | $)/g, "")
-}
-
 var clickFlag = 0;
 
 var navButton = document.getElementById('js-nav-button');
 navButton.onclick = function() {
     clickFlag = clickFlag + 1;
     if (clickFlag%2 != 0) {
-//        addClass(document.getElementById('cont-left'),'left_flip-left');
-//        addClass(document.getElementById('cont-right'),'left-flip-right');
 		document.getElementById('cont-left').classList.add('left_flip-left');
 		document.getElementById('cont-right').classList.add('left-flip-right');
         var timerId = setInterval(function() {
             var widthOfWindow = document.documentElement.clientWidth;
             console.log(widthOfWindow);
             if (widthOfWindow > 920) {
-//                removeClass(document.getElementById('cont-left'),'left_flip-left');
-//                removeClass(document.getElementById('cont-right'),'left-flip-right');
 				document.getElementById('cont-left').classList.remove('left_flip-left');
 				document.getElementById('cont-right').classList.remove('left-flip-right');
                 clickFlag = 0;
@@ -33,22 +18,10 @@ navButton.onclick = function() {
         },500);
 
     } else {
-        removeClass(document.getElementById('cont-left'),'left_flip-left');
-        removeClass(document.getElementById('cont-right'),'left-flip-right');
+        document.getElementById('cont-left').classList.remove('left_flip-left');
+		document.getElementById('cont-right').classList.remove('left-flip-right');
     }
 }
-
-// начать повторы с интервалом 2 сек
-//var timerId = setInterval(function() {
-//  alert( "тик" );
-//}, 2000);
-//
-//// через 5 сек остановить повторы
-//setTimeout(function() {
-//  clearInterval(timerId);
-//  alert( 'стоп' );
-//}, 5000);
-
 
 var informationBoxFirst = document.getElementById('js-information-1');
 var informationBoxSecond = document.getElementById('js-information-2');
@@ -65,12 +38,10 @@ informationBoxFirst.onclick = function() {
     flagInformationBoxThird = 0;
     if (flagInformationBoxFirst%2 != 0) {
         for (var i=0; i < numberBox.length; i++){
-            removeClass(numberBox[i],'information__wrapper_visible');
+            numberBox[i].classList.remove('information__wrapper_visible');
         }
-//        addClass(numberBox[0],'information__wrapper_visible');
 		numberBox[0].classList.add('information__wrapper_visible');
     } else {
-//        removeClass(numberBox[0],'information__wrapper_visible');
 		numberBox[0].classList.remove('information__wrapper_visible');
     }
 }
@@ -82,12 +53,10 @@ informationBoxSecond.onclick = function() {
     flagInformationBoxThird = 0;
     if (flagInformationBoxSecond%2 != 0) {
         for (var i=0; i < numberBox.length; i++){
-            removeClass(numberBox[i],'information__wrapper_visible');
+            numberBox[i].classList.remove('information__wrapper_visible');
         }
-//        addClass(numberBox[1],'information__wrapper_visible');
 		numberBox[1].classList.add('information__wrapper_visible');
     } else {
-//        removeClass(numberBox[1],'information__wrapper_visible');
 		numberBox[1].classList.remove('information__wrapper_visible');
     }
 }
@@ -99,15 +68,25 @@ informationBoxThird.onclick = function() {
     flagInformationBoxFirst = 0;
     if (flagInformationBoxThird%2 != 0) {
         for (var i=0; i < numberBox.length; i++){
-            removeClass(numberBox[i],'information__wrapper_visible');
+            numberBox[i].classList.remove('information__wrapper_visible');
         }
-//        addClass(numberBox[2],'information__wrapper_visible');
 		numberBox[2].classList.add('information__wrapper_visible');
     } else {
 //        removeClass(numberBox[2],'information__wrapper_visible');
 		numberBox[2].classList.remove('information__wrapper_visible');
     }
 }
+
+var buttonGallery = document.getElementById('js-index-to-gallery');
+buttonGallery.onclick = function() {
+	document.location.href = "gallery.html";
+}
+var buttonGallery = document.getElementById('js-index-to-gallery-right');
+buttonGallery.onclick = function() {
+	document.location.href = "gallery.html";
+}
+
+
 
 function anchor(skitAnchor,timeAnchor) {
 	$(skitAnchor).on("click","a", function (event) {
@@ -170,8 +149,6 @@ if (widthOfWindowForSlider < 768) {
 	})
 } else {
 	sliderButtonNext[0].addEventListener('click', function() {
-		console.log(sliderFlag);
-		console.log(sliderCount);
 		if (sliderFlag == sliderCount-1) {
 			document.getElementsByClassName('mainpage__slide-item')[sliderCount-1].classList.remove('mainpage__slide-item_active');
 			sliderFlag = 0;
