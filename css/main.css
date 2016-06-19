@@ -324,6 +324,17 @@ textarea {
 	background-size: cover;
 }
 
+.mainpage__slide-item-text {
+	position: relative;
+	display: flex;
+	width: 50%;
+	height: 70vh;
+	justify-content: flex-start;
+	align-items: flex-end;
+	color: #ffffff;
+	padding-left: 50px;
+}
+
 .mainpage__buttons {
 	display: flex;
 	position: absolute;

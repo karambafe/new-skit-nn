@@ -9,7 +9,7 @@ navButton.onclick = function() {
         var timerId = setInterval(function() {
             var widthOfWindow = document.documentElement.clientWidth;
             console.log(widthOfWindow);
-            if (widthOfWindow > 920) {
+            if (widthOfWindow > 990) {
 				document.getElementById('cont-left').classList.remove('left_flip-left');
 				document.getElementById('cont-right').classList.remove('left-flip-right');
                 clickFlag = 0;
